@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
     <!-- custom css  -->
     <link rel="stylesheet" href="style.css">
+    <link href="./src/output.css" rel="stylesheet">
 </head>
 
 <body class="body-fixed">
@@ -35,29 +36,13 @@
                           <button class="menu-toggle"><span></span><span></span></button>
                           <nav class="header-menu">
                               <ul class="menu food-nav-menu">
-                                  <li><a href="#home">Home</a></li>
+                                  <li><a href="#">Home</a></li>
                                   <li><a href="about.html">About</a></li>
-                                  <li><a href="#catagory">Catagory</a></li>
+                                  <li><a href="#category">Category</a></li>
                                   <li><a href="#gallery">Gallery</a></li>
                                   <li><a href="./Quiz/quiz.html">Quiz</a></li>
                               </ul>
-                          </nav>
-      
-                          <!-- <div class="header-right"> -->
-                              <!-- <form action="#" class="header-search-form for-des">
-                                  <input tpye="search" class="form-input" placeholder="Search More...">
-                                  <button type="submit">
-                                      <i class="uil uil-search"></i>
-                                  </button>
-                              </form> -->
-                              <!-- <a href="javascript:void(0)" class="header-btn header-cart">
-                                  <input class="signin" type="submit" value="Sign In" name="signin">
-                                 
-                              </a>
-                              <a href="javascript:void(0)" class="header-btn">
-                                  <input class="signup" type="submit" value="Sign Up" name="signup">
-                              </a> -->
-                          <!-- </div> -->
+                            </nav>
                       </div>
                   </div>
               </div>
@@ -66,7 +51,8 @@
       
       <div class="viewport">
           <div id="js-scroll-content">
-              <section class="main-banner" id="home">
+            <!--Home section-->
+              <section class="main-banner">
                   <div class="js-parallax-scene">
                       <div class="banner-shape-1 w-100" data-depth="0.30">
                           <img src="Pic/heart.jpg" alt="">
@@ -77,6 +63,7 @@
       
                       </div>
                   </div>
+
                   <div class="sec-wp">
                       <div class="container">
                           <div class="row">
@@ -112,189 +99,189 @@
               </section>
               
             <section class="sec-menu">
-            <div class="menu" id="menu">
-                <h1>Our <span> Catagory </span></h1>
-                <div class="menu_box">
-                    <div class="menu_card">
-                        
-                        <div class="menu_image">
-                            <!-- <img src="Pic/heart-1.jpg" alt=""> -->
-                            <model-viewer src="3d file/realistic_human_heart.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
-                            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+            <!--Category section-->
+                <div class="menu" id="category">
+                    <h1>Our <span> Category </span></h1>
+                    <div class="menu_box">
+                        <div class="menu_card">
+                            
+                            <div class="menu_image">
+                                <!-- <img src="Pic/heart-1.jpg" alt=""> -->
+                                <model-viewer src="3d file/realistic_human_heart.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
+                                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+                            </div>
+                            <div class="menu_info">
+                                <h2>Heart</h2>
+
+                                <p>Your muscular heart, the main organ in your cardiovascular system, is vital for life. 
+                                    Its parts work together to move blood through your body in a coordinated way.
+                                    It constantly sends oxygen to your cells and takes away waste. Many conditions can 
+                                    affect this organ and keep it from working well.</p>
+
+                                    <a href="heart.html" class="menu_btn"> Learn More >> </a>                       
+                            </div>
                         </div>
-                        <div class="menu_info">
-                            <h2>Heart</h2>
-
-                            <p>Your muscular heart, the main organ in your cardiovascular system, is vital for life. 
-                                Its parts work together to move blood through your body in a coordinated way.
-                                It constantly sends oxygen to your cells and takes away waste. Many conditions can 
-                                affect this organ and keep it from working well.</p>
-
-                                <a href="heart.html" class="menu_btn"> Learn More >> </a>
-                             
-                       
+                        
                     </div>
+
+                    <div class="menu_box">
+                        <div class="menu_card">
+                            
+                                <div class="menu_image">
+                                    <!-- <img src="Pic/brain.jpg" alt=""> -->
+                                    <model-viewer src="3d file/Brain.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
+                                    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+                                </div>
+                                <div class="menu_info">
+                                    <h2>Brain</h2>
+
+                                    <p>Your brain is an essential organ that controls many body functions.
+                                        Your brain receives and interprets all the sensory information you encounter, like sights, sounds, 
+                                        smells and tastes. Your brain has many complex parts that work together to help you function.</p>
+
+                                        <a href="brain.html" class="menu_btn"> Learn More >> </a>
+                                </div>
+                            
+                        </div>
+                        
                     </div>
-                    
-                </div>
 
-                <div class="menu_box">
-                    <div class="menu_card">
-                        
-                            <div class="menu_image">
-                                <!-- <img src="Pic/brain.jpg" alt=""> -->
-                                <model-viewer src="3d file/Brain.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
-                                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-                            </div>
-                            <div class="menu_info">
-                                <h2>Brain</h2>
+                    <div class="menu_box">
+                        <div class="menu_card">
+                            
+                                <div class="menu_image">
+                                    <!-- <img src="Pic/lung.jpg" alt=""> -->
+                                    <model-viewer src="3d file/Lung.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
+                                    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+                                </div>
+                                <div class="menu_info">
+                                    <h2>Lungs</h2>
 
-                                <p>Your brain is an essential organ that controls many body functions.
-                                     Your brain receives and interprets all the sensory information you encounter, like sights, sounds, 
-                                     smells and tastes. Your brain has many complex parts that work together to help you function.</p>
+                                    <p>Your two lungs make oxygen available to your body and remove gases like carbon dioxide. 
+                                        There are many conditions that can affect your lungs. 
+                                        Not smoking may help you prevent some illnesses.</p>
 
-                                    <a href="brain.html" class="menu_btn"> Learn More >> </a>
-                            </div>
-                           
+                                        <a href="lungs.html" class="menu_btn"> Learn More >> </a>
+                                </div>
+                            
                         </div>
-                    
-                </div>
-
-                <div class="menu_box">
-                    <div class="menu_card">
                         
-                            <div class="menu_image">
-                                <!-- <img src="Pic/lung.jpg" alt=""> -->
-                                <model-viewer src="3d file/Lung.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
-                                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-                            </div>
-                            <div class="menu_info">
-                                <h2>Lungs</h2>
+                    </div>
 
-                                <p>Your two lungs make oxygen available to your body and remove gases like carbon dioxide. 
-                                    There are many conditions that can affect your lungs. 
-                                    Not smoking may help you prevent some illnesses.</p>
+                    <div class="menu_box">
+                        <div class="menu_card">
+                            
+                                <div class="menu_image">
+                                    <!-- <img src="Pic/liver.jpg" alt=""> -->
+                                    <model-viewer src="3d file/Liver.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
+                                    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+                                </div>
+                                <div class="menu_info">
+                                    <h2>Liver</h2>
 
-                                    <a href="lungs.html" class="menu_btn"> Learn More >> </a>
-                            </div>
-                           
+                                    <p>The liver is a large organ in the abdomen that performs many important bodily functions, 
+                                        including blood filtering. It is also considered a gland because it makes chemicals the 
+                                        body needs. Certain diseases and lifestyles can damage the liver, but there are many ways 
+                                        to protect this vital organ.</p>
+
+                                        <a href="liver.html" class="menu_btn"> Learn More >> </a>
+                                </div>
+                            
                         </div>
-                    
-                </div>
-
-                <div class="menu_box">
-                    <div class="menu_card">
                         
-                            <div class="menu_image">
-                                <!-- <img src="Pic/liver.jpg" alt=""> -->
-                                <model-viewer src="3d file/Liver.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
-                                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-                            </div>
-                            <div class="menu_info">
-                                <h2>Liver</h2>
+                    </div>
 
-                                <p>The liver is a large organ in the abdomen that performs many important bodily functions, 
-                                    including blood filtering. It is also considered a gland because it makes chemicals the 
-                                    body needs. Certain diseases and lifestyles can damage the liver, but there are many ways 
-                                    to protect this vital organ.</p>
+                    <div class="menu_box">
+                        <div class="menu_card">
+                            
+                                <div class="menu_image">
+                                    <!-- <img src="Pic/stomach.jpg" alt=""> -->
+                                    <model-viewer src="3d file/Stomach.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
+                                    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+                                </div>
+                                <div class="menu_info">
+                                    <h2>Stomach</h2>
 
-                                    <a href="liver.html" class="menu_btn"> Learn More >> </a>
-                            </div>
-                           
+                                    <p>Your stomach is a muscular organ that digests food. It is part of your gastrointestinal (GI) tract.
+                                        When your stomach receives food, it contracts and produces acids and enzymes that break down food. 
+                                        When your stomach has broken down food, it passes it to your small intestine.</p>
+
+                                        <a href="stomach.html" class="menu_btn"> Learn More >> </a>
+                                </div>
+                            
                         </div>
-                    
-                </div>
-
-                <div class="menu_box">
-                    <div class="menu_card">
                         
-                            <div class="menu_image">
-                                <!-- <img src="Pic/stomach.jpg" alt=""> -->
-                                <model-viewer src="3d file/Stomach.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
-                                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-                            </div>
-                            <div class="menu_info">
-                                <h2>Stomach</h2>
+                    </div>
 
-                                <p>Your stomach is a muscular organ that digests food. It is part of your gastrointestinal (GI) tract.
-                                     When your stomach receives food, it contracts and produces acids and enzymes that break down food. 
-                                     When your stomach has broken down food, it passes it to your small intestine.</p>
+                    <div class="menu_box">
+                        <div class="menu_card">
+                            
+                                <div class="menu_image">
+                                    <!-- <img src="Pic/kidney.jpg" alt=""> -->
+                                    <model-viewer src="3d file/Kidney.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
+                                    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+                                </div>
+                                <div class="menu_info">
+                                    <h2>Kidney</h2>
 
-                                    <a href="stomach.html" class="menu_btn"> Learn More >> </a>
-                            </div>
-                           
+                                    <p>Most people have two kidneys, organs that sit in the back of your abdomen. Your kidneys’ primary 
+                                        function is to filter your blood. They also remove waste and balance your body’s fluids. 
+                                        Common kidney conditions include kidney disease, kidney infections and kidney cysts.</p>
+
+                                        <a href="kidney.html" class="menu_btn"> Learn More >> </a>
+                                </div>
+                            
                         </div>
-                    
-                </div>
-
-                <div class="menu_box">
-                    <div class="menu_card">
                         
-                            <div class="menu_image">
-                                <!-- <img src="Pic/kidney.jpg" alt=""> -->
-                                <model-viewer src="3d file/Kidney.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
-                                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-                            </div>
-                            <div class="menu_info">
-                                <h2>Kidney</h2>
+                    </div>
 
-                                <p>Most people have two kidneys, organs that sit in the back of your abdomen. Your kidneys’ primary 
-                                    function is to filter your blood. They also remove waste and balance your body’s fluids. 
-                                    Common kidney conditions include kidney disease, kidney infections and kidney cysts.</p>
+                    <div class="menu_box">
+                        <div class="menu_card">
+                            
+                                <div class="menu_image">
+                                    <!-- <img src="Pic/large.jpg" alt=""> -->
+                                    <model-viewer src="3d file/large instince.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
+                                    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+                                </div>
+                                <div class="menu_info">
+                                    <h2>Colon</h2>
 
-                                    <a href="kidney.html" class="menu_btn"> Learn More >> </a>
-                            </div>
-                           
+                                    <p>The large intestine includes the colon, rectum and anus. It’s all one, long tube that continues 
+                                        from the small intestine as food nears the end of its journey through your digestive system. 
+                                        The large intestine turns food waste into stool and passes it from the body when you poop.</p>
+
+                                        <a href="colon.html" class="menu_btn"> Learn More >> </a>
+                                </div>
+                            
                         </div>
-                    
-                </div>
-
-                <div class="menu_box">
-                    <div class="menu_card">
                         
-                            <div class="menu_image">
-                                <!-- <img src="Pic/large.jpg" alt=""> -->
-                                <model-viewer src="3d file/large instince.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
-                                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-                            </div>
-                            <div class="menu_info">
-                                <h2>Colon</h2>
+                    </div>
 
-                                <p>The large intestine includes the colon, rectum and anus. It’s all one, long tube that continues 
-                                    from the small intestine as food nears the end of its journey through your digestive system. 
-                                    The large intestine turns food waste into stool and passes it from the body when you poop.</p>
+                    <div class="menu_box">
+                        <div class="menu_card">
+                            
+                                <div class="menu_image">
+                                    <!-- <img src="Pic/small.jpg" alt=""> -->
+                                    <model-viewer src="3d file/small instince.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
+                                    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+                                </div>
 
-                                    <a href="colon.html" class="menu_btn"> Learn More >> </a>
-                            </div>
-                           
+                                <div class="menu_info">
+                                    <h2>Small Bowel </h2>
+
+                                    <p>The small intestine is actually the longest segment of the gastrointestinal tract — the long, 
+                                        continuous pathway that food travels through your digestive system. In the small intestine, 
+                                        food is broken down into liquid and most of its nutrients are absorbed. The waste is passed 
+                                        on to the large intestine.</p>
+
+                                        <a href="small_bowel.html" class="menu_btn"> Learn More >> </a>
+                                </div>
+                            
                         </div>
-                    
-                </div>
-
-                <div class="menu_box">
-                    <div class="menu_card">
                         
-                            <div class="menu_image">
-                                <!-- <img src="Pic/small.jpg" alt=""> -->
-                                <model-viewer src="3d file/small instince.glb" alt="A 3D model" camera-controls auto-rotate="false"></model-viewer>
-                                <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-                            </div>
-                            <div class="menu_info">
-                                <h2>Small Bowel </h2>
+                    </div>
 
-                                <p>The small intestine is actually the longest segment of the gastrointestinal tract — the long, 
-                                    continuous pathway that food travels through your digestive system. In the small intestine, 
-                                    food is broken down into liquid and most of its nutrients are absorbed. The waste is passed 
-                                    on to the large intestine.</p>
-
-                                    <a href="small_bowel.html" class="menu_btn"> Learn More >> </a>
-                            </div>
-                           
-                        </div>
-                    
-                </div>
-            </div>
-        </section>
+            </section>
 
         <section class="book-table section bg-light">
 
