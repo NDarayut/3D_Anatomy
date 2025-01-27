@@ -447,7 +447,7 @@ ul{
 }
 .function h3{
     position: relative;
-    text-align: justify;
+    text-align: left;
     width: 600px;
 }
 .function li{
@@ -456,13 +456,13 @@ ul{
 }
 .function .fun-p p{
     position: relative;
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 
 }
 .function p{
     position: relative;
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 
 }
@@ -476,7 +476,7 @@ ul{
 }
 .anatomy h3{
 
-    text-align: justify;
+    text-align: left;
     width: 600px;
 }
 .anatomy .sec-anatomy img{
@@ -485,12 +485,11 @@ ul{
 }
 .anatomy p{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy li{
-
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .heart h2{
@@ -499,12 +498,12 @@ ul{
 }
 .anatomy .heart p{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .heart li{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .chambers h2{
@@ -513,12 +512,12 @@ ul{
 }
 .anatomy .chambers p{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .chambers li{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .valves h2{
@@ -527,12 +526,12 @@ ul{
 }
 .anatomy .valves p{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .valves li{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .blood h2{
@@ -541,12 +540,12 @@ ul{
 }
 .anatomy .blood p{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .blood li{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .system h2{
@@ -555,12 +554,12 @@ ul{
 }
 .anatomy .system p{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .system li{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .system h3{
@@ -574,18 +573,18 @@ ul{
 }
 .anatomy .con h3{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
     font-size: 25px;
 }
 .anatomy .con p{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .con li{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .care h2{
@@ -595,17 +594,17 @@ ul{
 }
 .anatomy .care h3{
 
-    text-align: justify;
+    text-align: left;
     font-size: 25px;
 }
 .anatomy .care p{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 .anatomy .care li{
 
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 }
 

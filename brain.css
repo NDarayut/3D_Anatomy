@@ -447,7 +447,7 @@ ul{
 }
 .function h3{
     position: relative;
-    text-align: justify;
+    text-align: left;
     width: 600px;
 }
 .function li{
@@ -456,13 +456,13 @@ ul{
 }
 .function .fun-p p{
     position: relative;
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 
 }
 .function p{
     position: relative;
-    text-align: justify;
+    text-align: left;
     width: 1000px;
 
 }
