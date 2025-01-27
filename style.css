@@ -424,7 +424,7 @@ border: none;
     }
     #js-scroll-content{
         position: absolute;
-       overflow: hidden;
+        overflow: hidden;
         width: 100%;
         top: 0;
         left: 0;
@@ -446,6 +446,7 @@ border: none;
 
 .js-parallax-scene{
     position: absolute;
+    overflow: hidden;
     top: 0;
     left: 0;
     width: 100%;

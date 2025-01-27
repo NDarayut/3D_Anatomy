@@ -27,7 +27,7 @@
               <div class="row">
                   <div class="col-lg-2">
                       <div class="header-logo">
-                          <a href="anatomy.html">
+                          <a href="/">
                               <img src="Pic/2.jpg" width="100" height="60" alt="logo">
                           </a>
                       </div>
@@ -37,7 +37,7 @@
                           <button class="menu-toggle"><span></span><span></span></button>
                           <nav class="header-menu">
                               <ul class="menu food-nav-menu">
-                                  <li><a href="#overview">Overview</a></li>
+                                  <li><a href="#">Overview</a></li>
                                   <li><a href="#function">Function</a></li>
                                   <li><a href="#anatomy">Anatomy</a></li>
                                   <li><a href="#con&dis">Conditions & Disorders</a></li>
@@ -55,7 +55,7 @@
 
 <div class="viewport">
     <div id="js-scroll-content">
-        <section class="about-sec section" id="about">
+        <section class="about-sec section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -66,6 +66,7 @@
                                 <model-viewer src="3d file/realistic_human_heart.glb" alt="A 3D model of a human heart" camera-controls auto-rotate="false" style=" height: 250px;"></model-viewer>
                                 <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
                             </div>
+
                             <div>
                                 <h2 class="sec-h2">Overview</h2>
                                 <h3>What is the heart?</h3>
@@ -76,8 +77,8 @@
 
 
                         <div>
-                            <div class="mb-[50px]">
-                                <div class="function">
+                            <div class="mb-[100px]" id="function">
+                                <div class="function" >
                                     <h2 class="fun-h2 mb-[30px]">Function</h2>
                                     
                                     <h3>What is the function of the heart?  </h3>
@@ -96,7 +97,7 @@
                                 </div>
                             </div>
 
-                            <div class="anatomy">
+                            <div class="anatomy" id="anatomy">
                                 <h2 class="fun-h2 mb-[30px]">Anatomy</h2>
                                     
                                 <h3>What are the parts of the heart? </h3>
@@ -173,6 +174,7 @@
                                     <li>Left bundle branch: Sends electric impulses to your left ventricle.</li>
                                     <li>Right bundle branch: Sends electric impulses to your right ventricle.</li>
                                     <li>Bundle of His: Sends impulses from your AV node to the Purkinje fibers.</li>
+                                    
                                     <li>Purkinje fibers: Make your heart ventricles contract and pump out blood.</li>
                                     <h3 class="mt-[30px]">Where is your heart located?</h3>
                                     <p>Your heart is in the front of your chest. It sits slightly behind and to the left of your sternum (breastbone), which is in the middle of your chest.
@@ -185,7 +187,7 @@
                                     <p>Everyone’s heart is a slightly different size. Generally, your heart is about the same size as your fist. On average, an adult’s heart weighs about 10 ounces. Your heart may weigh a little more or a little less, depending on your body size and sex.</p>
                                 </div>
 
-                                <div class="con mt-[50px]">
+                                <div class="con mt-[100px]" id="con&dis">
                                     <h2>Conditions and Disorders</h2>
                                     <h3 class="mt-[30px]">What are the common conditions and disorders that affect your heart?</h3>
                                     
@@ -233,7 +235,7 @@
                                         <li>Operations like coronary artery bypass surgery or a valve replacement.</li>
                                 </div>
 
-                                <div class="care mt-[50px]">
+                                <div class="care mt-[100px]" id="care">
                                     <h2>Care</h2>
                                     <h3 class="mt-[30px]">How can I keep my heart healthy?</h3>
                                     <p>If you have a condition that affects your heart, follow your healthcare provider’s treatment plan. It’s important to take medications at the right times and in the right amounts.

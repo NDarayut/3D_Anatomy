@@ -1,122 +1,119 @@
-/*==========
+// // Smooth Scroll
 
-Theme Name: Foodify - Food HTML5 Template
-Theme Version: 1.0
+// var html = document.documentElement;
+// var body = document.body;
 
-==========*/
+// var scroller = {
+//     target: document.querySelector("#js-scroll-content"),
+//     ease: 0.08, // <= scroll speed
+//     endY: 0,
+//     y: 0,
+//     resizeRequest: 1,
+//     scrollRequest: 0,
+// };
 
-/*==========
------ JS INDEX -----
-1.smooth scroll
-2.Scroll to top
-3.Scroll to Section
-==========*/
+// var requestId = null;
+// var isAnchorClick = false; // Flag to disable smooth scroll during anchor link clicks
 
+// TweenLite.set(scroller.target, {
+//     rotation: 0.001,
+//     force3D: true,
+// });
 
-// smooth scroll
+// window.addEventListener("load", onLoad);
 
-var html = document.documentElement;
-var body = document.body;
+// function onLoad() {
+//     updateScroller();
+//     window.focus();
+//     window.addEventListener("resize", onResize);
+//     document.addEventListener("scroll", onScroll);
+// }
 
-var scroller = {
-    target: document.querySelector("#js-scroll-content"),
-    ease: 0.08, // <= scroll speed
-    endY: 0,
-    y: 0,
-    resizeRequest: 1,
-    scrollRequest: 0,
-};
+// function updateScroller() {
+//     if (isAnchorClick) {
+//         // During anchor link click, skip the smooth scrolling logic
+//         scroller.y = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
+//         TweenLite.set(scroller.target, {
+//             y: -scroller.y,
+//         });
+//         return; // Exit to prevent smooth scrolling while an anchor link is active
+//     }
 
-var requestId = null;
+//     var resized = scroller.resizeRequest > 0;
 
-TweenLite.set(scroller.target, {
-    rotation: 0.001,
-    force3D: true,
-});
+//     if (resized) {
+//         var height = scroller.target.clientHeight;
+//         body.style.height = height + "px";
+//         scroller.resizeRequest = 0;
+//     }
 
-window.addEventListener("load", onLoad);
+//     var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
 
-function onLoad() {
-    updateScroller();
-    window.focus();
-    window.addEventListener("resize", onResize);
-    document.addEventListener("scroll", onScroll);
-}
+//     scroller.endY = scrollY;
+//     scroller.y += (scrollY - scroller.y) * scroller.ease;
 
-function updateScroller() {
-    var resized = scroller.resizeRequest > 0;
+//     if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
+//         scroller.y = scrollY;
+//         scroller.scrollRequest = 0;
+//     }
 
-    if (resized) {
-        var height = scroller.target.clientHeight;
-        body.style.height = height + "px";
-        scroller.resizeRequest = 0;
-    }
+//     TweenLite.set(scroller.target, {
+//         y: -scroller.y,
+//     });
 
-    var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
+//     requestId =
+//         scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
+// }
 
-    scroller.endY = scrollY;
-    scroller.y += (scrollY - scroller.y) * scroller.ease;
+// function onScroll() {
+//     scroller.scrollRequest++;
+//     if (!requestId) {
+//         requestId = requestAnimationFrame(updateScroller);
+//     }
+// }
 
-    if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
-        scroller.y = scrollY;
-        scroller.scrollRequest = 0;
-    }
+// function onResize() {
+//     scroller.resizeRequest++;
+//     if (!requestId) {
+//         requestId = requestAnimationFrame(updateScroller);
+//     }
+// }
 
-    TweenLite.set(scroller.target, {
-        y: -scroller.y,
-    });
+// // Scroll to Section (Anchor links)
+// var nav = $('.foody-nav-menu , .banner-btn'),
+//     nav_height = nav.outerHeight();
 
-    requestId =
-        scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
-}
+// nav.find('a').on('click', function (e) {
+//     e.preventDefault(); // Prevent the default anchor behavior
 
-function onScroll() {
-    scroller.scrollRequest++;
-    if (!requestId) {
-        requestId = requestAnimationFrame(updateScroller);
-    }
-}
+//     var $el = $(this),
+//         id = $el.attr('href'),
+//         targetOffset = $(id).offset().top - nav_height;
 
-function onResize() {
-    scroller.resizeRequest++;
-    if (!requestId) {
-        requestId = requestAnimationFrame(updateScroller);
-    }
-}
+//     // Disable smooth scrolling during the anchor link scroll
+//     isAnchorClick = true;
 
-jQuery(".filters").on("click", function() {
-    setTimeout(function() {
-        onScroll();
-        onResize();
-    }, 1000);
-});
+//     // Animate scroll to the target section
+//     $('html, body').stop().animate(
+//         {
+//             scrollTop: targetOffset,
+//         },
+//         500,
+//         function () {
+//             // Re-enable smooth scrolling after animation completes
+//             isAnchorClick = false;
 
-document.querySelector(".filters li").addEventListener("click", onResize);
-document.querySelector(".filters li").addEventListener("click", onScroll);
+//             // Trigger one scroll update to ensure the correct positioning
+//             onScroll();
+//         }
+//     );
+// });
 
-// Scroll to top
+// // Scroll to Top
+// const scrolltotop = document.querySelector(".scrolltop");
 
-const scrolltotop = document.querySelector(".scrolltop");
-
-scrolltotop.addEventListener("click", () =>
-    gsap.to(window, {
-        scrollTo: 0,
-    })
-);
-
-// Scroll to Section
-
-var sections = $('section'),
-    nav = $('.foody-nav-menu , .banner-btn'),
-    nav_height = nav.outerHeight();
-
-nav.find('a').on('click', function() {
-    var $el = $(this),
-        id = $el.attr('href');
-
-    $('html, body').animate({
-        scrollTop: $(id).offset().top - nav_height
-    }, 500);
-
-    return false;
-});
+// scrolltotop.addEventListener("click", () =>
+//     gsap.to(window, {
+//         scrollTo: 0,
+//     })
+// );

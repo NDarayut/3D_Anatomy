@@ -19,15 +19,16 @@
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css" />
     <!-- custom css  -->
     <link rel="stylesheet" href="brain.css" />
+    <link href="./src/output.css" rel="stylesheet">
   </head>
 
-  <body class="body-fixed">
+  <body class="h-auto">
     <header class="site-header">
       <div class="container">
         <div class="row">
           <div class="col-lg-2">
             <div class="header-logo">
-              <a href="anatomy.html">
+              <a href="/">
                 <img src="Pic/2.jpg" width="100" height="60" alt="logo" />
               </a>
             </div>
@@ -37,7 +38,7 @@
               <button class="menu-toggle"><span></span><span></span></button>
               <nav class="header-menu">
                 <ul class="menu food-nav-menu">
-                  <li><a href="#overview">Overview</a></li>
+                  <li><a href="#">Overview</a></li>
                   <li><a href="#function">Function</a></li>
                   <li><a href="#anatomy">Anatomy</a></li>
                   <li><a href="#con&dis">Conditions & Disorders</a></li>
@@ -52,69 +53,75 @@
 
     <div class="viewport">
       <div id="js-scroll-content">
-        <section class="about-sec section" id="about">
+        <section class="about-sec section">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
 
-                
-                <div class="sec-title text-center m-auto">
-                  <h2 class="sec-h2" style="margin-top: 50px;">Overview</h2>
-                  <div style="margin-top: 100px;">
-                      <model-viewer src="3d file/Brain.glb" alt="A 3D model of a human heart" camera-controls auto-rotate="false" style="width: 50%; height: 250px;"></model-viewer>
+                <div class="my-[150px] flex">
+
+                    <div class="w-1/4 mr-[150px]">
+                      <model-viewer src="3d file/Brain.glb" alt="A 3D model of a human heart" camera-controls auto-rotate="false" style=" height: 250px;"></model-viewer>
                       <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-                      <div style="margin-top: 75px;">
-                          <h3>What is the brain?</h3>
-                      <p>
-                          Contents Overview Function Anatomy Conditions and Disorders
-                          Care Additional Common Questions Overview What is the brain?
-                          Your brain is an essential organ. All of your emotions, 
-                          sensations, aspirations and everything that makes you
-                          uniquely individual come from your brain. This complex organ
-                          has many functions. It receives, processes and interprets
-                          information. Your brain also stores memories and controls
-                          your movements. Your brain is one component of your central
-                          nervous system (CNS). It connects to your spinal cord, the
-                          other part of your CNS.
-                      </p>
+                    </div>
+                     
+                      <div>
+                        <h2 class="sec-h2">Overview</h2>
+                        <h3>What is the brain?</h3>
+                        <p>
+                            Contents Overview Function Anatomy Conditions and Disorders
+                            Care Additional Common Questions Overview What is the brain?
+                            Your brain is an essential organ. All of your emotions, 
+                            sensations, aspirations and everything that makes you
+                            uniquely individual come from your brain. This complex organ
+                            has many functions. It receives, processes and interprets
+                            information. Your brain also stores memories and controls
+                            your movements. Your brain is one component of your central
+                            nervous system (CNS). It connects to your spinal cord, the
+                            other part of your CNS.
+                        </p>
                       </div>
-                  </div>
-
-                <div class="function">
-                  <h2 class="fun-h2">Function</h2>
-
-                  <h3>What is the brain’s function?</h3>
-
-                  <p>
-                    Your brain receives information from your five senses:
-                    sight, smell, sound, touch and taste. Your brain also
-                    receives inputs including touch, vibration, pain and
-                    temperature from the rest of your body as well as autonomic
-                    (involuntary) inputs from your organs. It interprets this
-                    information so you can understand and associate meaning with
-                    what goes on around you.
-
-                    <br />
-                    Your brain enables:
-                  </p>
-
-                  <li>Thoughts and decisions.</li>
-                  <li>Memories and emotions.</li>
-                  <li>Movements (motor function), balance and coordination.</li>
-                  <li>Perception of various sensations including pain.</li>
-                  <li>
-                    Automatic behavior such as breathing, heart rate, sleep and
-                    temperature control.
-                  </li>
-                  <li>Regulation of organ function.</li>
-                  <li>Speech and language functions.</li>
-                  <li>Fight or flight response (stress response).</li>
+             
                 </div>
-                <div class="anatomy">
-                  <h2 class="fun-h2">Anatomy</h2>
+                
+                <div class="mb-[100px]" id="function">
+                  <div class="function">
+                    <h2 class="fun-h2 mb-[30px]">Function</h2>
+
+                    <h3>What is the brain’s function?</h3>
+
+                    <p>
+                      Your brain receives information from your five senses:
+                      sight, smell, sound, touch and taste. Your brain also
+                      receives inputs including touch, vibration, pain and
+                      temperature from the rest of your body as well as autonomic
+                      (involuntary) inputs from your organs. It interprets this
+                      information so you can understand and associate meaning with
+                      what goes on around you.
+
+                      <br />
+                      Your brain enables:
+                    </p>
+
+                    <li>Thoughts and decisions.</li>
+                    <li>Memories and emotions.</li>
+                    <li>Movements (motor function), balance and coordination.</li>
+                    <li>Perception of various sensations including pain.</li>
+                    <li>
+                      Automatic behavior such as breathing, heart rate, sleep and
+                      temperature control.
+                    </li>
+                    <li>Regulation of organ function.</li>
+                    <li>Speech and language functions.</li>
+                    <li>Fight or flight response (stress response).</li>
+                  </div>
+                </div>
+
+                <div class="anatomy" id="anatomy">
+                  <h2 class="fun-h2 mb-[30px]">Anatomy</h2>
 
                   <h3>What are the main parts of the brain?</h3>
+
                   <div class="sec-anatomy mb-3">
                     <img src="Pic/brain-1.jpg" alt="" />
                     <img src="Pic/brain-2.webp" alt="" />
@@ -126,9 +133,7 @@
                   </p>
 
                   <li>
-                    Cerebrum: Your cerebrum interprets sights, sounds and
-                    touches. It also regulates emotions, reasoning and learning.
-                    Your cerebrum makes up about 80% of your brain.
+                    Cerebrum: Your cerebrum interprets sights, sounds and touches. It also regulates emotions, reasoning and learning. Your cerebrum makes up about 80% of your brain.
                   </li>
                   <li>
                     Cerebellum: Your cerebellum maintains your balance, posture,
@@ -144,7 +149,7 @@
                     cord.
                   </li>
 
-                  <div class="heart mb-3 mt-3">
+                  <div class="heart mb-3 mt-[30px]">
                     <h3>What are the lobes that make up your brain?</h3>
                     <p>
                       Each side of your brain has different lobes (sections).
@@ -203,7 +208,7 @@
                     </li>
                   </div>
 
-                  <div class="chambers smb-3 mt-3">
+                  <div class="chambers mt-[30px]">
                     <h3>
                       What is the difference between the left and right brain
                       hemispheres?
@@ -236,7 +241,7 @@
                       called brain plasticity.
                     </p>
                   </div>
-                  <div class="valves mb-3 mt-3">
+                  <div class="valves mt-[30px]">
                     <h3>
                       What are the bones and tissues that protect your brain?
                     </h3>
@@ -272,7 +277,7 @@
                       these vital nervous system organs.
                     </p>
                   </div>
-                  <div class="blood mb-3 mt-3">
+                  <div class="blood mt-[30px]">
                     <h3>What is the gray and white matter in the brain?</h3>
                     <p>
                       Substances called gray and white matter make up your
@@ -284,8 +289,8 @@
                       efficiently.
                     </p>
                   </div>
-                  <div class="system mb-3 mt-3">
-                    <h3>Which nerves send signals to and from your brain?</h3>
+                  <div class="system mt-[30px]">
+                    <h3 class="mt-[30px]">Which nerves send signals to and from your brain?</h3>
                     <p>
                       Your brain contains several types of nerves. Nerves carry
                       messages by sending electrical impulses back and forth
@@ -304,7 +309,7 @@
                       your brain.
                     </p>
 
-                    <h3>
+                    <h3 class="mt-[30px]">
                       What other parts of the brain send and receive signals?
                     </h3>
                     <p>
@@ -357,7 +362,7 @@
                       sleep-wake transitions and autonomic function.
                     </li>
 
-                    <h3>How many brain cells does a human have?</h3>
+                    <h3 class="mt-[30px]">How many brain cells does a human have?</h3>
                     <p>
                       For many years, scientists thought the human brain had 100
                       billion nerve cells (neurons). Today, we know the actual
@@ -374,7 +379,7 @@
                       provide nutrition to your brain.
                     </li>
 
-                    <h3>How does your brain relate to hormone production?</h3>
+                    <h3 class="mt-[30px]">How does your brain relate to hormone production?</h3>
 
                     <p>
                       Within your thalamus sits a small structure called your
@@ -398,7 +403,7 @@
                     </p>
                   </div>
 
-                  <div class="con">
+                  <div class="con mt-[100px]" id="con&dis">
                     <h2>Conditions and Disorders</h2>
                     <h3>What conditions or disorders can affect the brain?</h3>
 
@@ -439,14 +444,14 @@
                       (burst).
                     </li>
 
-                    <h3>Can you be born with a brain condition?</h3>
+                    <h3 class="mt-[30px]">Can you be born with a brain condition?</h3>
                     <p>
                       Some babies are born with a brain condition. Inherited
                       conditions, genetic differences or injuries in the uterus
                       or at birth can cause these conditions.
                     </p>
 
-                    <h3>Can a head injury cause a brain condition?</h3>
+                    <h3 class="mt-[30px]">Can a head injury cause a brain condition?</h3>
                     <p>
                       Injuries can lead to brain damage. When you experience a
                       blow to your head, you may suffer a traumatic brain injury
@@ -460,9 +465,9 @@
                       causes progressively worsening thinking problems.
                     </p>
                   </div>
-                  <div class="care">
+                  <div class="care mt-[100px]" id="care">
                     <h2>Care</h2>
-                    <h3>What are some tips to keep my brain healthy?</h3>
+                    <h3 class="mt-[30px]">What are some tips to keep my brain healthy?</h3>
                     <p>
                       Some lifestyle habits can keep your brain healthier. To
                       support your brain health, you may:
@@ -486,7 +491,7 @@
                       lower your blood pressure and increase your life span.
                     </p>
 
-                    <h3>What should I ask my doctor about my brain health?</h3>
+                    <h3 class="mt-[30px]">What should I ask my doctor about my brain health?</h3>
                     <p>You may also want to ask your healthcare provider:</p>
                     <li>
                       What are the signs or symptoms that tell me something
