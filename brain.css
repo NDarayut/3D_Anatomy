@@ -95,7 +95,6 @@ ul{
 }
 .main-navigation .menu li a{
     display: flex;
-    transition: 0.3s;
     position: relative;
     justify-content: center;
     align-items: center;
@@ -107,9 +106,9 @@ ul{
     border-radius: 10px;
 }
 .main-navigation .menu li a:hover, .main-navigation .menu li .active-menu, .main-navigation .menu .sub-menu li .active-sub-menu{
-    color: #0d0d25;
-    background: #f3f3f5;
-    box-shadow: inset 8px 8px 12px #ffff, inset -8px -8px 12px #6d2400;
+    color: #ffffff;
+    background: #6d2400;
+    transition: color 0.3s ease 0.01s, background 0.3s ease 0.01s;
 }
 
 *{

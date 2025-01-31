@@ -44,7 +44,7 @@ img{
     left: 0;
     width: 100%;
     z-index: 99;
-    transition: 0.5s;
+
     border-bottom: 1px solid transparent ;
 }
 .site-header.sticky_head{
@@ -52,7 +52,6 @@ img{
     padding: 20px 0;
     border-color: #f2f2f2;
     backdrop-filter: blur(20px);
-
 
 }
 .main-navigation{
@@ -95,6 +94,7 @@ ul{
 }
 .main-navigation .menu ul a{
     width: 200px;
+    padding: 0 ;
 }  
 .main-navigation .menu li:hover > ul, .main-navigation .menu li:focus > ul{
     left: auto;
@@ -114,7 +114,7 @@ ul{
 .main-navigation .menu li a:hover, .main-navigation .menu li .active-menu, .main-navigation .menu .sub-menu li .active-sub-menu{
     color: #ffffff;
     background: #6d2400;
-    transition-delay: 0.01s;
+    transition: color 0.3s ease 0.01s, background 0.3s ease 0.01s;
 }
 .header-right{
     margin-left: 40px;
@@ -712,7 +712,7 @@ label{
 
 .menu{
     width: 100%;
-    
+
 }
 .menu h1{
     padding: 10px;
@@ -736,8 +736,10 @@ label{
     bottom: 2px;
 }
 .menu .menu_box{
-    width: 95%;
-    margin: 0 20px;
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+
 }
 
 .menu .menu_box .menu_card{
@@ -746,6 +748,8 @@ label{
     padding-top: 10px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .menu .menu_box .menu_card .menu_image {
@@ -963,11 +967,7 @@ label{
     background: #f3f3f5;
     box-sizing: border-box;
 }
-input, button{
-    border: none;
-    outline: none;
-    background: none;
-}
+
 .cont{
     overflow: hidden;
     position: relative;

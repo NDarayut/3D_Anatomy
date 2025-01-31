@@ -22,15 +22,16 @@
 
 <body class="h-auto">
 
-    <div class="col-lg-2">
-        <a href="anatomy.html">
-            <img src="Pic/logo-web.png" width="200" height="120" alt="logo" >
-        </a>
-    </div>
+    
 
         <header class="site-header">
           <div class="container">
               <div class="row">  
+                <div class="col-lg-2">
+                    <a href="#">
+                        <img src="Pic/2.jpg" width="120" height="60" alt="logo">
+                    </a>
+                </div>
                   <div class="col-lg-10">
                       <div class="main-navigation">
                           <button class="menu-toggle"><span></span><span></span></button>
@@ -99,9 +100,9 @@
               </section>
             
             <div>
-            <section class=" border-black border-[1px]">
+            <section class="">
             <!--Category section-->
-                <div class="menu" id="category">
+                <div class="menu " id="category">
                     <h1>Our <span> Category </span></h1>
                     <div class="menu_box">
                         <div class="menu_card">
@@ -394,70 +395,79 @@
             </div>
         </section>
 
-   <section class="cont-sec">
-       <div class="cont">
-        <div class="form sign-in">
-            <h2>Sign In</h2>
-            <label>
-                <span>Email Address</span>
-                <input type="email" name="email">
-            </label>
-            <label>
-                <span>Password</span>
-                <input type="password" name="password">
-            </label>
-            <button class="submit" type="button">Sign In</button>
-            <p class="forgot-pass">Forgot Password</p>
-
-            <div class="social-media">
-                <ul>
-                    <li><img src="Pic/facebook.png"></li>
-                    <li><img src="Pic/twitter.png"></li>
-                    <li><img src="Pic/instagram.png"></li>
-                    <li><img src="Pic/linkedin.png"></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="sub-cont">
-            <div class="img">
-                <div class="img-text m-up">
-                    <h2>New here?</h2>
-                    <p>Sign up and get more notification about us</p>
+        <section class="min-h-screen bg-gray-50 justify-center items-center mt-[100px]">
+            <div class="flex justify-center">
+                <div class="bg-white shadow-lg rounded-xl w-1/2 p-10">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-8 text-center">Contact Us</h2>
+                    <form id="contact-form" class="space-y-8">
+                        <!-- Name Field -->
+                        <div>
+                            <label for="user_name" class="block text-lg font-medium text-gray-700">
+                                Name
+                            </label>
+                            <input
+                                type="text"
+                                id="user_name"
+                                name="user_name"
+                                class="mt-2 block w-full p-4 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-base"
+                                placeholder="Enter your name"
+                                required
+                            />
+                        </div>
+                        <!-- Email Field -->
+                        <div>
+                            <label for="user_email" class="block text-lg font-medium text-gray-700">
+                                Email Address
+                            </label>
+                            <input
+                                type="email"
+                                id="user_email"
+                                name="user_email"
+                                class="mt-2 block w-full p-4 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-base"
+                                placeholder="Enter your email"
+                                required
+                            />
+                        </div>
+                        <!-- Message Field -->
+                        <div class="flex flex-col">
+                            <label for="message" class="block text-lg font-medium text-gray-700">
+                                Message
+                            </label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                class="mt-2 block w-full p-4 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 text-base"
+                                placeholder="Type your message here"
+                                required
+                            ></textarea>
+                        </div>
+                        <!-- Submit Button -->
+                        <div>
+                            <button
+                                type="submit"
+                                class="w-full bg-indigo-600 text-white py-4 px-6 rounded-lg font-semibold hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 transition-all duration-300"
+                            >
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                    <!-- Status Message -->
+                    <p
+                        id="status-message"
+                        class="mt-6 text-center text-green-600 font-semibold hidden"
+                    >
+                        Thank you for reaching out! We’ll get back to you soon.
+                    </p>
                 </div>
-                <div class="img-text m-in">
-                    <h2>One of us</h2>
-                    <p>If you already has an account, just sign in. We've missed you!</p>
-                </div>
-                <div class="img-btn">
-                    <span class="m-up">Sign Up</span>
-                   
-                    <span class="m-in">Sign In</span>
-                </div>
             </div>
-            <div class="form sign-up">
-                <h2>Sign Up</h2>
-                <label>
-                    <span>Name</span>
-                    <input type="text">
-                </label>
-                <label>
-                    <span>Email</span>
-                    <input type="email">
-                </label>
-                <label>
-                    <span>Password</span>
-                    <input type="password">
-                </label>
-                <label>
-                    <span>Confirm Password</span>
-                    <input type="password">
-                </label>
-                <button type="button" class="submit"> Sign Up Now</button>
-            </div>
-        </div>
-       </div>
-   </section>
+        </section>
+        
+        
+        
+        
+        
+        
           
    <footer class="site-footer" id="contact">
     <div class="top-footer section">
@@ -582,6 +592,10 @@
     <script src="assets/js/smooth-scroll.js"></script>
     <!-- custom js  -->
     <script src="JS/main.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+    <script type="module" src="JS/contact.js"></script>
+
 
     <script type="text/javascript " src="JS/more.js"></script>
         
