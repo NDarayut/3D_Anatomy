@@ -584,9 +584,8 @@ p{
     height: 50%;
     display: inline-block;
     padding-top: 50px;
-    padding-bottom: 100px;
-    padding: 10px 8% 20px ;
-    background: #f3f3f5;
+    padding-bottom: 50px;
+    background: #fff;
 }
 .sec-sub-title {
    position: relative;
@@ -621,7 +620,7 @@ label{
     position: relative;
     padding: 20px;
 }
- .up {
+.up {
     position: relative;
     top: 0px;
    left: 10px;
@@ -1222,6 +1221,7 @@ button{
 .top-footer, .bottom-footer {
     border-top: 1px solid  rgb(204 204 204 / 40%);
     position: relative;
+    width: 100%;
 }
 
 .footer-logo {
