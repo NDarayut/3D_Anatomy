@@ -1306,5 +1306,38 @@ button{
     box-shadow: inset 9px 9px 12px #cccccc, inset -9px -9px 12px #ffffff;
     color: #0d0d25;
 }
-
+.submitButton {
+    display: inline-block;
+    
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #6d2400; /* Indigo */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .submitButton:hover {
+    background-color: #6d2400; /* Darker Indigo */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px); /* Subtle lift effect */
+  }
+  
+  .submitButton:focus {
+    outline: 2px solid #6d2400; /* Focus ring color */
+    outline-offset: 2px;
+  }
+  
+  .submitButton:active {
+    transform: translateY(0); /* Reset lift on click */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  }
+  
 
